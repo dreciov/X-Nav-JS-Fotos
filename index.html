@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<title>Random Images</title>
+	<script type="text/javascript" charset="utf-8">
+
+
+    function randomImg(){
+      var photos = [
+          'images/aularioII-edificio.JPG',
+          'images/deparIII-edificio3.JPG',
+          'images/deporte-estadio.JPG',
+          'images/logoURJC.jpg',
+      ]
+        var imagen = photos[Math.floor(Math.random()*photos.length)];
+        var source = document.getElementById('img');
+        source.innerHTML =  '<img src="' + imagen + '">';
+    }
+
+	</script>
+	</head>
+
+	<body>
+
+		<p><a href="javascript:randomImg()"> New Random!!</a></p>
+    <span id="img"></span>
+	</body>
+	</html>
